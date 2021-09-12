@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=1">
+  <title>Recipe App</title>
+  <link rel="stylesheet" href="/public/css/main.css">
+  <link rel="stylesheet" href="/public/css/main.css">
+  <style media="screen">
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      color: black;
+      text-align: center;
+      font-family: sans-serif;
+    }
+
+
+    #container {
+      height: 100px;
+      padding-top: 40px;
+    }
+
+    .app-title {
+      padding-top: 40px;
+      width: 100%;
+      text-align: center;
+      height: 60px;
+    }
+
+    nav ul {
+      display: table;
+      margin: 20px auto;
+      padding: 0;
+      width: 80%;
+      text-align: center;
+    }
+
+    nav li {
+      display: table-cell;
+      min-width: 50px;
+    }
+
+    nav a {
+      display: block;
+      width: 100%;
+      text-decoration: none;
+      color: #555;
+      padding-bottom: 5px;
+    }
+
+    nav li.current {
+      border-bottom: 3px solid #92D050;
+    }
+
+    nav li:hover {
+      color: #E7DA66;
+      border-bottom: 3px solid #F0E475;
+    }
+  </style>
+</head>
+
+<body>
+
+  <%- include('partials/navigation') %>
+    <div id="container">
+      <%- body %>
+    </div>
+
+
+</body>
+
+</html>
